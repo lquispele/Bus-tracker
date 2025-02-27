@@ -54,5 +54,5 @@ def read_root():
     return {"message": "API funcionando"}
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))  # Usa el puerto asignado por Railway
+    port = int(os.environ.get("PORT", 8080))  # Usa el puerto asignado por Railway
     uvicorn.run(app, host="0.0.0.0", port=port)
